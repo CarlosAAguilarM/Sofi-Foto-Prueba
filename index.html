@@ -1,106 +1,60 @@
-/* styles.css */
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #121212;
-  color: #f0f0f0;
-  line-height: 1.6;
-}
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Aguilar | Fotografía</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Carlos Aguilar</h1>
+      <p>Fotografía moderna & elegante</p>
+    </div>
+  </header>
 
-.hero {
-  background-image: url('images/portada.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-}
+  <section class="about">
+    <h2>Sobre mí</h2>
+    <p>Apasionado por capturar momentos únicos con un enfoque artístico y profesional. Especializado en retratos, eventos y fotografía creativa.</p>
+  </section>
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  <section class="gallery">
+    <h2>Galería</h2>
+    <div class="grid">
+      <img src="images/foto1.jpg" alt="Foto 1" />
+      <img src="images/foto2.jpg" alt="Foto 2" />
+      <img src="images/foto3.jpg" alt="Foto 3" />
+      <img src="images/foto4.jpg" alt="Foto 4" />
+      <img src="images/foto5.jpg" alt="Foto 5" />
+      <img src="images/foto6.jpg" alt="Foto 6" />
+    </div>
+  </section>
 
-.overlay h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin: 0;
-}
+  <section class="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>📷 Sesiones de retrato profesionales</li>
+      <li>💍 Cobertura de bodas y eventos</li>
+      <li>🌆 Fotografía artística y urbana</li>
+      <li>🖥️ Edición y retoque digital</li>
+    </ul>
+  </section>
 
-.overlay p {
-  font-size: 1.3rem;
-  margin-top: 10px;
-}
+  <section class="contact">
+    <h2>Contacto</h2>
+    <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+    <div class="contact-links">
+      <a href="mailto:tuemail@email.com">📧 Correo</a>
+      <a href="https://wa.me/5210000000000">📱 WhatsApp</a>
+      <a href="https://instagram.com/tuusuario">📸 Instagram</a>
+    </div>
+  </section>
 
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.gallery .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-.services ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.services li {
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-.contact-links a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #333;
-  padding: 10px 20px;
-  border-radius: 25px;
-  transition: background-color 0.3s;
-}
-
-.contact-links a:hover {
-  background-color: #555;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #0a0a0a;
-  font-size: 0.9rem;
-}
+  <footer>
+    <p>&copy; 2025 Carlos Aguilar | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
